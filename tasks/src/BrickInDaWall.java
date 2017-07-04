@@ -30,10 +30,10 @@ public class BrickInDaWall {
     public String solution(double d) {
         this.d = d;
 
-        if ((this.xy < d) && (this.yz < d) && (this.xz < d)) {
-            return "The brick will break the wall!";
+        if ((this.xy <= d) && (this.yz <= d) && (this.xz <= d)) {
+            return "Another brick in the wall!";
         } else {
-            return "The brick will crash(";
+            return "Wrong holl jackass)))";
         }
     }
 }
