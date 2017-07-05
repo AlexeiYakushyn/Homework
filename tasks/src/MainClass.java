@@ -1,17 +1,23 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
- * Created by alexei.yakushyn on 7/3/17.
+ * Created by alexei.yakushyn on 04.07.2017.
  */
 public class MainClass {
-    public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Input brick edges : x, y, z");
-        BrickInDaWall brickJack = new BrickInDaWall(scn.nextDouble(), scn.nextDouble(), scn.nextDouble());
-        System.out.println("Set the hole diameter");
-        double d = scn.nextDouble();
-        brickJack.setDiameter(d);
-        brickJack.solution(d);
-        System.out.println(brickJack.solution(d));
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader num = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Input diameter of the hole");
+        double n = Double.parseDouble(num.readLine());
+        System.out.println("Input the brick dimensions x, y , z");
+        double n1 = Double.parseDouble(num.readLine());
+        double n2 = Double.parseDouble(num.readLine());
+        double n3 = Double.parseDouble(num.readLine());
+
+        BrickInDaWall brick = new BrickInDaWall(n1, n2, n3);
+
+        System.out.println(brick.solution(n1, n2, n3, n));
     }
 }
