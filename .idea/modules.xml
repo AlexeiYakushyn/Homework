@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/task1/Brick.iml" filepath="$PROJECT_DIR$/task1/Brick.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Homework.iml" filepath="$PROJECT_DIR$/Homework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/task1/tasks2.iml" filepath="$PROJECT_DIR$/task1/tasks2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/task2_3/task2.iml" filepath="$PROJECT_DIR$/task2_3/task2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/task4_6/task3.iml" filepath="$PROJECT_DIR$/task4_6/task3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task1/task1.iml" filepath="$PROJECT_DIR$/task1/task1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task2_3/task2_3.iml" filepath="$PROJECT_DIR$/task2_3/task2_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task4_6/task4_6.iml" filepath="$PROJECT_DIR$/task4_6/task4_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasksFrom_17_07/tasksFrom_17_07.iml" filepath="$PROJECT_DIR$/tasksFrom_17_07/tasksFrom_17_07.iml" />
     </modules>
   </component>
 </project>
