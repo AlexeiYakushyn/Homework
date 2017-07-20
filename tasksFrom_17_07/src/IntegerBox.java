@@ -5,7 +5,7 @@ import java.util.Random;
  */
 public class IntegerBox {
     private static int n;
-   // private static int num;
+    // private static int num;
 
     private static int[] intBox;
 
@@ -15,11 +15,10 @@ public class IntegerBox {
     }
 
     public int[] fillArray() {
-       // Random rnd = new Random();
         intBox = new int[n];
         int z;
         for (int i = 0; i < intBox.length; i++) {
-            z = (int) (Math.random()* n);
+            z = (int) (Math.random() * n);
             intBox[i] = z;
         }
         return intBox;

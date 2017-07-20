@@ -15,8 +15,10 @@ public class MainIntBox {
         int a = Integer.parseInt(rdr.readLine());
         integerBox1.setSizeofBox(a);
         System.out.println("Now our box looks like");
-        //integerBox1.setSizeofBox();
         integerBox1.printBox();
+        System.out.println("");
+        System.out.println("Now lets get sum of elements in our Box. \nAnd sum is " + integerBox1.sum());
+        System.out.println("Arithmetical mean of elements in our Box size " + integerBox1.size() + " is " + integerBox1.average());
 
     }
 }
