@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 public class MainIntBox {
 
     public static void main(String[] args) throws IOException {
+       //переделать на Arraylist с дженериками (<T extends Number>  .add(T a)))
         BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
         IntegerBox integerBox1 = new IntegerBox();
 
