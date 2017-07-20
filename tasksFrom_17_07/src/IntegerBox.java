@@ -5,17 +5,22 @@ import java.util.Random;
  */
 public class IntegerBox {
     private static int n;
-    private static int[] intBox = new int[n];
+   // private static int num;
 
-    public int setSizeofBox(int num) {
-        n = num;
-        return n;
+    private static int[] intBox;
+
+    public void setSizeofBox(int num) {
+        this.n = num;
+        System.out.println(n);
     }
 
-    public int[] fillArray(int n){
-        Random rnd = new Random();
-        for (int i = 0; i < intBox.length; i++){
-            intBox[i] = rnd.nextInt(n);
+    public int[] fillArray() {
+       // Random rnd = new Random();
+        intBox = new int[n];
+        int z;
+        for (int i = 0; i < intBox.length; i++) {
+            z = (int) (Math.random()* n);
+            intBox[i] = z;
         }
         return intBox;
     }
@@ -37,7 +42,7 @@ public class IntegerBox {
     }
 
     public void printBox() {
-        fillArray(n);
+        fillArray();
         for (int i = 0; i < intBox.length; i++) {
             System.out.print(intBox[i] + " ");
         }
