@@ -15,6 +15,6 @@ public class MainNumberPairs {
         mass.add(9);
         System.out.println(mass);
         NumberPairs pairs = new NumberPairs();
-        pairs.findPair(mass, 11);
+        pairs.findPair(mass, 5);
     }
 }
