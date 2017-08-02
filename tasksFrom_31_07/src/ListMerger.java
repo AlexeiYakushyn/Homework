@@ -4,35 +4,38 @@ import java.util.*;
  * Created by alexei.yakushyn on 02.08.2017.
  */
 public class ListMerger {
+    public ArrayList<Integer> result;
 
-    private ArrayList<Integer> result;
+    public ListMerger(ArrayList<Integer> listA, ArrayList<Integer> listB) {
+        this.newList(listA, listB);
+    }
 
-//    public ArrayList<Integer> ListMerger() {
-//        return this.result;
-//    }
 
-    public ArrayList<Integer> newList(List listA, List listB) {
+    public ArrayList newList(List listA, List listB) {
+
+
+        ArrayList<Integer> result = new ArrayList<>(listA.size() + listB.size());
 
         if (listA == null) {
-            throw new NullPointerException("List a is null");
+            throw new NullPointerException("listA is null");
         }
         if (listB == null) {
-            throw new NullPointerException("List b is null");
+            throw new NullPointerException("listB is null");
         }
         if (listA.isEmpty()) {
-            return new ArrayList<>(listA);
+            return new ArrayList<Integer>(listB);
         } else if (listB.isEmpty()) {
-            return new ArrayList<>(listB);
+            return new ArrayList<Integer>(listA);
         } else {
-           this.result = new ArrayList<>(listA.size() + listB.size());
             for (int i = 0; i < result.size(); i++) {
                 if ((result.get(i) % 2) == 0) {
-                    result.add(result.indexOf(listA));
+                    result.addAll(listA);
                 } else {
-                    result.add(result.indexOf(listB));
+                    result.addAll(listB);
                 }
             }
             return result;
         }
     }
 }
+
