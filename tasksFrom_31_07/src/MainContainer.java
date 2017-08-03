@@ -30,7 +30,8 @@ public class MainContainer {
         System.out.println(listContainer1.get());
 
         ListContainer listException = new ListContainer(0);
-        listException.add(3);
+
+        System.out.println(listException.get());
 
 
     }

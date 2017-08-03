@@ -18,22 +18,20 @@ public class ListContainer {
 
     }
 
-    public void add(int num) throws ListContainerException {
-
-        if (size <= 0) {
-            throw new  ListContainerException("Capacity should be more than zero", size);
-        }
+    public void add(int num) {
 
         if (list.size() < size) {
             list.add(num);
-        }
-        else {
+        } else {
             list.remove(0);
             list.add(num);
         }
     }
 
-    public ArrayList get() {
+    public ArrayList get() throws ListContainerException {
+        if (size <= 0) {
+            throw new ListContainerException("Capacity should be more than zero", size);
+        }
         return list;
     }
 }
