@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/lesson_9/lesson_9.iml" filepath="$PROJECT_DIR$/lesson_9/lesson_9.iml" />
       <module fileurl="file://$PROJECT_DIR$/task1/task1.iml" filepath="$PROJECT_DIR$/task1/task1.iml" />
       <module fileurl="file://$PROJECT_DIR$/task2_3/task2_3.iml" filepath="$PROJECT_DIR$/task2_3/task2_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/task2_3/task2_31.iml" filepath="$PROJECT_DIR$/task2_3/task2_31.iml" />
@@ -13,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_31_07/tasksFrom_31_07.iml" filepath="$PROJECT_DIR$/tasksFrom_31_07/tasksFrom_31_07.iml" />
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_31_07/tasksFrom_31_07_MergeColl.iml" filepath="$PROJECT_DIR$/tasksFrom_31_07/tasksFrom_31_07_MergeColl.iml" />
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_31_07/MergerList/tasksFrom_31_07_MergerList.iml" filepath="$PROJECT_DIR$/tasksFrom_31_07/MergerList/tasksFrom_31_07_MergerList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treeNode/treeNode.iml" filepath="$PROJECT_DIR$/treeNode/treeNode.iml" />
     </modules>
   </component>
 </project>
