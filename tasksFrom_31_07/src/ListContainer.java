@@ -2,27 +2,38 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by alexei.yakushyn on 02.08.2017.
+ * Created by alexei.yakushyn on 03.08.2017.
  */
-public  class ListContainer implements Container {
-    int size;
-    private int element;
+public class ListContainer {
+    Create sz = new Create();
+    private int size = sz.size;
 
-    List<Integer> list = new ArrayList<>();
+    public ListContainer(int size) {
+        this.size = size;
+    }
 
-    @Override
-    public void add(int element) {
-        this.element = element;
+    ArrayList<Integer> list = new ArrayList<>(size);
+
+    public ListContainer() {
+
+    }
+
+    public void add(int num) throws ListContainerException {
+
+        if (size <= 0) {
+            throw new  ListContainerException("Capacity should be more than zero", size);
+        }
+
         if (list.size() < size) {
-            list.add(element);
-        } else {
+            list.add(num);
+        }
+        else {
             list.remove(0);
-            list.add(element);
+            list.add(num);
         }
     }
 
-    @Override
-    public List<Integer> get() {
+    public ArrayList get() {
         return list;
     }
 }
