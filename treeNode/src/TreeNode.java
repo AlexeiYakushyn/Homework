@@ -16,7 +16,7 @@ public class TreeNode implements Comparable {
     public TreeNode(int value) {
         this.value = value;
     }
-    public int getValue() {
+  /*  public int getValue() {
         return this.value;
     }
 
@@ -46,7 +46,7 @@ public class TreeNode implements Comparable {
 
     public void setParent(TreeNode parent) {
         this.parent = parent;
-    }
+    }*/
 
     public void add(Node node, int value) {
         if (value < node.value) {
@@ -74,6 +74,12 @@ public class TreeNode implements Comparable {
             return(size(node.left) + 1 + size(node.right));
         }
     }
+
+    public boolean contains() {
+
+        return false;
+    }
+
 
 
     @Override
