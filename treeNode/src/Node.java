@@ -3,20 +3,23 @@
  */
 public class Node {
 
-    public Node root;
+    int key;
 
-    public int value;
+    String name;
 
-    Node left;
+    Node leftChild;
 
-    Node right;
+    Node rightChild;
 
-    public Node() {
-        this.root = null;
+    Node(int key, String name) {
+        this.key = key;
+        this.name = name;
     }
 
-    public Node(int value) {
-        this.value = value;
+    public String toString() {
+        return name + " has the key " + key;
+
+
     }
 
 }

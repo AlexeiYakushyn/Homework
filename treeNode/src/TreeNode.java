@@ -5,86 +5,61 @@ import java.lang.reflect.Type;
  */
 
 
-public class TreeNode implements Comparable {
+public class TreeNode {
 
-    public TreeNode left;
-    public TreeNode right;
-    int value;
-    private TreeNode parent;
-    private TreeNode root;
+    Node root;
 
-    public TreeNode(int value) {
-        this.value = value;
-    }
-  /*  public int getValue() {
-        return this.value;
-    }
+    /**
+     * Method @addNode() that filling our tree with some Nodes.
+     */
+    public void addNode(int key, String name) {
+        /** creating a new Node and initialize it */
+        Node newNode = new Node(key, name);
+        /** checking if there is root. If not this become root. */
+        if (root == null) {
 
-    public void setValue(int data) {
-        this.value = value;
-    }
+            root = newNode;
 
-    public TreeNode getLeft() {
-        return this.left;
-    }
+        } else {
 
-    public void setLeft(TreeNode left) {
-        this.left = left;
-    }
+            // Set root as the Node we will start with as we traverse the tree.
 
-    public TreeNode getRight() {
-        return this.right;
-    }
+            Node concreteNode = root;
 
-    public void setRight(TreeNode right) {
-        this.right = right;
-    }
+            // Future parent for our new Node
 
-    public TreeNode getParent() {
-        return this.parent;
-    }
+            Node parent;
 
-    public void setParent(TreeNode parent) {
-        this.parent = parent;
-    }*/
+            while (true) {
 
-    public void add(Node node, int value) {
-        if (value < node.value) {
-            if (node.left != null) {
-                add(node.left, value);
-            } else {
-                System.out.println("  Inserted " + value + " to left of "
-                        + node.value);
-                node.left = new Node(value);
-            }
-        } else if (value > node.value) {
-            if (node.right != null) {
-                add(node.right, value);
-            } else {
-                System.out.println("  Inserted " + value + " to right of "
-                        + node.value);
-                node.right = new Node(value);
+                // root is the top parent so we start there.
+
+                parent = concreteNode;
+
+                // Check if the new node should go on
+                // the left side of the parent node
+
+                if (key < concreteNode.key) {
+
+                    concreteNode = concreteNode.leftChild;
+
+                    if (concreteNode == null) {
+
+                        parent.leftChild = newNode;
+                        return;
+                    }
+                } else {
+
+                    concreteNode = concreteNode.rightChild;
+
+                    if (concreteNode == null) {
+
+                        parent.rightChild = newNode;
+                        return;
+                    }
+                }
             }
         }
-    }
-
-    public int size(Node node) {
-        if (node == null) return(0);
-        else {
-            return(size(node.left) + 1 + size(node.right));
-        }
-    }
-
-    public boolean contains() {
-
-        return false;
-    }
-
-
-
-    @Override
-    public int compareTo(Object o) {
-        return 0;
     }
 }
 
