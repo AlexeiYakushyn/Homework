@@ -5,17 +5,23 @@ import java.lang.reflect.Type;
  */
 
 
-public class TreeNode {
+public class TreeNode implements Comparable<Node> {
 
     Node root;
 
+    Node newNode = new Node();
     /**
      * Method @addNode() that filling our tree with some Nodes.
      */
+
     public void addNode(int key, String name) {
+
         /** creating a new Node and initialize it */
+
         Node newNode = new Node(key, name);
+
         /** checking if there is root. If not this become root. */
+
         if (root == null) {
 
             root = newNode;
@@ -61,5 +67,15 @@ public class TreeNode {
             }
         }
     }
+
+
+
+
+    @Override
+    public int compareTo(Node o) {
+        return 0;
+    }
+
+
 }
 
