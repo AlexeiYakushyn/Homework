@@ -17,7 +17,7 @@ public class FileRandomSymbols {
         int count = (int) (Math.random() * 2000000);
         for (int i = 0; i < count; i++)
             randString.append(symbols.charAt((int) (Math.random() * symbols.length())));
-       return randomText = String.valueOf(randString);
+       return randomText = String.valueOf(randString); // returns null, why?
     }
 
 
