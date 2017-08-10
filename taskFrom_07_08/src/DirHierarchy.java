@@ -5,7 +5,7 @@ import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 
 /**
- * Created by alexei.yakushyn on 08.08.2017.
+ * Created by StackOverFlow forum long, long time ago
  */
 public class DirHierarchy {
     public static void main(String[] args) throws IOException {
