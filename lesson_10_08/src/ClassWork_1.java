@@ -26,7 +26,8 @@ public class ClassWork_1 {
 
         BufferedWriter writer = new BufferedWriter(new FileWriter(FILENAME));
 
-        for (String string : strings) {
+        for (int i = 0; i < strings.size(); i++) {
+            String string = strings.get(i);
             writer.write(string);
             writer.newLine();
         }
