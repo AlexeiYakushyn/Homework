@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class ReadWriteRandomSymbls {
 
-    public static final String FILENAME = "D:\\myjava\\homework7\\Homework\\taskFrom_07_08\\src\\testFile.txt";
+    public static final String FILENAME = "E:\\ProgrammFiles\\Homework\\Homework\\taskFrom_07_08\\src\\testFile.txt";
 
     public static void main(String[] args) throws IOException {
 
@@ -22,9 +22,10 @@ public class ReadWriteRandomSymbls {
             rndmSmbls.add(smbls.charAt(rndm.nextInt(smbls.length())));
         }
 
-        System.out.println(rndmSmbls);
+       // System.out.println(rndmSmbls);
 
         BufferedReader file = new BufferedReader(new FileReader(FILENAME));
+
         if (!FILENAME.isEmpty()) {
             BufferedWriter writer = new BufferedWriter(new FileWriter(FILENAME));
             for (int i = 0; i < rndmSmbls.size(); i++) {
@@ -36,5 +37,37 @@ public class ReadWriteRandomSymbls {
             writer.close();
             file.close();
         }
+
+        long startFR, endFR;
+
+        startFR = System.nanoTime();
+        try (FileReader reader = new FileReader(FILENAME)) {
+            int c;
+            while ((c = reader.read()) != -1) {
+
+               // System.out.print((char) c);
+
+            }
+        } catch (IOException ex) {
+
+            System.out.println(ex.getMessage());
+        }
+        endFR = System.nanoTime();
+
+        System.out.println("FileReader speed is " + (endFR - startFR) + " nanoSec");
+
+        long startBFR, endBFR;
+        startBFR = System.nanoTime();
+        try (BufferedReader file1 = new BufferedReader(new FileReader(FILENAME))) {
+            String line;
+            while ((line = file.readLine()) != null) {
+               // System.out.println();
+            }
+
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+        endBFR = System.nanoTime();
+        System.out.println("BufferedReader speed is " + (endBFR - startBFR) + " nanoSec");
     }
 }
