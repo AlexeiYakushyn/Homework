@@ -28,14 +28,14 @@ public class ReadWriteRandomSymbls {
         BufferedWriter writer = new BufferedWriter(new FileWriter(FILENAME));
 
         if (!FILENAME.isEmpty()) {
-            for (int i = 0; i < rndmSmbls.size(); i++) {
+            for (int i = 0; i < rndmSmbls.size() - 1; i++) {
                 char str = rndmSmbls.get(i);
                 writer.write(str);
 
             }
             writer.flush();
             writer.close();
-            file.close();
+            //file.close();
         }
 
         long startFR, endFR;
@@ -58,9 +58,9 @@ public class ReadWriteRandomSymbls {
 
         long startBFR, endBFR;
         startBFR = System.nanoTime();
-        try (BufferedReader file1 = new BufferedReader(new FileReader(FILENAME))) {
+        try {
             String line;
-            while ((line = file1.readLine()) != null) {
+            while ((line = file.readLine()) != null) {
                // System.out.println();
             }
 
