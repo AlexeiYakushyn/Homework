@@ -60,7 +60,7 @@ public class ReadWriteRandomSymbls {
         startBFR = System.nanoTime();
         try (BufferedReader file1 = new BufferedReader(new FileReader(FILENAME))) {
             String line;
-            while ((line = file.readLine()) != null) {
+            while ((line = file1.readLine()) != null) {
                // System.out.println();
             }
 
