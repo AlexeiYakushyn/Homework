@@ -25,9 +25,9 @@ public class ReadWriteRandomSymbls {
        // System.out.println(rndmSmbls);
 
         BufferedReader file = new BufferedReader(new FileReader(FILENAME));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(FILENAME));
 
         if (!FILENAME.isEmpty()) {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(FILENAME));
             for (int i = 0; i < rndmSmbls.size(); i++) {
                 char str = rndmSmbls.get(i);
                 writer.write(str);
