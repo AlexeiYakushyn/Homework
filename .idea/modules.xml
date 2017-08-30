@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/binarySearchTree/binarySearchTree.iml" filepath="$PROJECT_DIR$/binarySearchTree/binarySearchTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson_10_08/lesson_10_08.iml" filepath="$PROJECT_DIR$/lesson_10_08/lesson_10_08.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../lesson_13/lesson_13.iml" filepath="$PROJECT_DIR$/../lesson_13/lesson_13.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson_9/lesson_9.iml" filepath="$PROJECT_DIR$/lesson_9/lesson_9.iml" />
       <module fileurl="file://$PROJECT_DIR$/task1/task1.iml" filepath="$PROJECT_DIR$/task1/task1.iml" />
       <module fileurl="file://$PROJECT_DIR$/task2_3/task2_3.iml" filepath="$PROJECT_DIR$/task2_3/task2_3.iml" />
@@ -16,9 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_20_07/tasksFrom_20_07.iml" filepath="$PROJECT_DIR$/tasksFrom_20_07/tasksFrom_20_07.iml" />
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_24_07/tasksFrom_24_07.iml" filepath="$PROJECT_DIR$/tasksFrom_24_07/tasksFrom_24_07.iml" />
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_31_07/tasksFrom_31_07.iml" filepath="$PROJECT_DIR$/tasksFrom_31_07/tasksFrom_31_07.iml" />
-      <module fileurl="file://E:\ProgrammFiles\Homework\Homework\tasksFrom_31_07\tasksFrom_31_07_MergeColl.iml" filepath="E:\ProgrammFiles\Homework\Homework\tasksFrom_31_07\tasksFrom_31_07_MergeColl.iml" />
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_31_07/MergerList/tasksFrom_31_07_MergerList.iml" filepath="$PROJECT_DIR$/tasksFrom_31_07/MergerList/tasksFrom_31_07_MergerList.iml" />
       <module fileurl="file://$PROJECT_DIR$/treeNode/treeNode.iml" filepath="$PROJECT_DIR$/treeNode/treeNode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml_parsers/xml_parsers.iml" filepath="$PROJECT_DIR$/xml_parsers/xml_parsers.iml" />
     </modules>
   </component>
 </project>
