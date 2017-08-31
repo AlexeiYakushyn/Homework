@@ -1,7 +1,3 @@
-/**
- * Created by alexei.yakushyn on 30.08.2017.
- */
-
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.ParserConfigurationException;
@@ -16,8 +12,13 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import java.io.File;
 
+/**
+ * Created by alexei.yakushyn on 30.08.2017.
+ */
+
 public class CreateXmlFileDOM {
-    public static void main(String[] args) {
+
+    public void createDOMXml() {
 
         try {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -70,7 +71,7 @@ public class CreateXmlFileDOM {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File("D:\\myjava\\com.hillel.core\\Homework\\xml_parsers\\trucks.xml"));
+            StreamResult result = new StreamResult(new File("E:\\ProgrammFiles\\hillel\\Homework\\xml_parsers\\trucksDOM.xml"));
             transformer.transform(source, result);
 
 
