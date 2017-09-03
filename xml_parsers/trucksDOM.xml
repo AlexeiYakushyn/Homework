@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><trucks><superWeightTruck weightClass="Really Huge"><truckName type="Cement Truck">Kayaba Rocket</truckName><truckName type="Truck Tractor">Peterbilt 386</truckName><truckName type="Dump Truck">Belaz 75710</truckName><truckName type="Sleeper Cab">New Cascadia</truckName></superWeightTruck></trucks>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<trucks>
+    <superWeightTruck weightClass="Really Huge">
+        <truckName type="Cement Truck">Kayaba Rocket</truckName>
+        <truckName type="Truck Tractor">Peterbilt 386</truckName>
+        <truckName type="Dump Truck">Belaz 75710</truckName>
+        <truckName type="Sleeper Cab">New Cascadia</truckName>
+    </superWeightTruck>
+</trucks>

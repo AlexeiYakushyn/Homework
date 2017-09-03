@@ -1,8 +1,7 @@
-import java.io.*;
-
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
+import java.io.*;
 
 /**
  * Created by alexei.yakushyn on 30.08.2017.
@@ -51,7 +50,7 @@ public class CreateXmlFileStAX {
             xMLStreamWriter.flush();
             xMLStreamWriter.close();
 
-            File file = new File("E:\\ProgrammFiles\\hillel\\Homework\\xml_parsers\\carsStAX.xml");
+            File file = new File("D:\\myjava\\com.hillel.core\\Homework\\xml_parsers\\carsStAX.xml");
             BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 
             String xmlString = stringWriter.getBuffer().toString();

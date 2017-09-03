@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/jSONwriteRead/jSONwriteRead.iml" filepath="$PROJECT_DIR$/jSONwriteRead/jSONwriteRead.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson_10_08/lesson_10_08.iml" filepath="$PROJECT_DIR$/lesson_10_08/lesson_10_08.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson_9/lesson_9.iml" filepath="$PROJECT_DIR$/lesson_9/lesson_9.iml" />
       <module fileurl="file://$PROJECT_DIR$/task1/task1.iml" filepath="$PROJECT_DIR$/task1/task1.iml" />
