@@ -76,7 +76,6 @@ public class CreateXmlFileDOM {
             StreamResult result = new StreamResult(new File("D:\\myjava\\com.hillel.core\\Homework\\xml_parsers\\carsStAX.xml"));
             transformer.transform(source, result);
 
-
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (TransformerConfigurationException e) {
