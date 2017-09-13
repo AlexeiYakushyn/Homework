@@ -26,7 +26,7 @@ public class ConvertXMLtoJSON {
             JSONObject xmlJSONObject = XML.toJSONObject(TEST_XML_STRING);
             String jsonPrettyPrintString = xmlJSONObject.toString(PRETTY_PRINT_INDENT_FACTOR);
 
-            File file = new File("D:\\myjava\\com.hillel.core\\Homework\\jSONwriteRead\\src\\trucksJSON_test.json");
+            File file = new File("E:\\ProgrammFiles\\hillel\\Homework\\jSONwriteRead\\src\\trucksJSON_test.json");
             ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream(file));
 
             stream.writeObject(jsonPrettyPrintString);

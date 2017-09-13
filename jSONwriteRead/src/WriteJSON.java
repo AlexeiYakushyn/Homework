@@ -1,7 +1,11 @@
-import org.json.simple.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONArray;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.HashMap;
 
 /**
@@ -27,18 +31,22 @@ public class WriteJSON {
         type3.put("content", "New Cascadia");
 
         JSONArray truckName = new JSONArray();
-        truckName.add(type);
-        truckName.add(type1);
-        truckName.add(type2);
-        truckName.add(type3);
+        truckName.put(type);
+        truckName.put(type1);
+        truckName.put(type2);
+        truckName.put(type3);
 
-        jsonObject.put("trucks", new JSONObject()
-                .put("superWeightTruck", new JSONObject()
-                        .put("weightClass", "Really Huge")
-                        .put("truckName", truckName))
-        );
+        try {
+            jsonObject.put("trucks", new JSONObject()
+                    .put("superWeightTruck", new JSONObject()
+                            .put("weightClass", "Really Huge")
+                            .put("truckName", truckName))
+            );
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
-        File file = new File("D:\\myjava\\com.hillel.core\\Homework\\jSONwriteRead\\src\\trucksJSON.json");
+        File file = new File("E:\\ProgrammFiles\\hillel\\Homework\\jSONwriteRead\\src\\trucksJSON.json");
 
         try {
 
