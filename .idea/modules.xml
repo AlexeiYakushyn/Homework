@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_24_07/tasksFrom_24_07.iml" filepath="$PROJECT_DIR$/tasksFrom_24_07/tasksFrom_24_07.iml" />
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_31_07/tasksFrom_31_07.iml" filepath="$PROJECT_DIR$/tasksFrom_31_07/tasksFrom_31_07.iml" />
       <module fileurl="file://$PROJECT_DIR$/tasksFrom_31_07/MergerList/tasksFrom_31_07_MergerList.iml" filepath="$PROJECT_DIR$/tasksFrom_31_07/MergerList/tasksFrom_31_07_MergerList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threads_from_11.09/threads_from_11.09.iml" filepath="$PROJECT_DIR$/threads_from_11.09/threads_from_11.09.iml" />
       <module fileurl="file://$PROJECT_DIR$/treeNode/treeNode.iml" filepath="$PROJECT_DIR$/treeNode/treeNode.iml" />
       <module fileurl="file://$PROJECT_DIR$/xml_parsers/xml_parsers.iml" filepath="$PROJECT_DIR$/xml_parsers/xml_parsers.iml" />
     </modules>
