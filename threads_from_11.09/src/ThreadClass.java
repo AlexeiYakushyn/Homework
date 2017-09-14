@@ -10,10 +10,15 @@ public class ThreadClass implements Runnable {
         System.out.println("Thread started work " + Thread.currentThread().getName());
         MethodClass method = new MethodClass();
 
+
         for (int i = 0; i < 50; i++) {
-            method.method();
+            //method.method();
+            int x  = method.getCount();
+            x++;
+            method.setCount(x);
+            System.out.println("Count equals: " + Thread.currentThread().getName() + " " + method.getCount());
             try {
-                Thread.sleep(100);
+                Thread.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

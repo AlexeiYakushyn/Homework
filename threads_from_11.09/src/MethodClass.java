@@ -3,11 +3,15 @@
  */
 public class MethodClass {
 
-    public static int count = 0;
+    private int count = 0;
 
-//    public int getCount() {
-//        return this.count;
-//    }
+    public int getCount() {
+        return this.count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 
     public void method() {
         count++;
