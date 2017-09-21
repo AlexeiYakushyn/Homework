@@ -1,0 +1,3 @@
+Java 5 added a new Java package to the Java platform, the java.util.concurrent package.
+This package contains a set of classes that makes it easier to develop concurrent (multithreaded) applications in Java.
+Before this package was added, you would have to program your utility classes yourself.

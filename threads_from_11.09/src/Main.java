@@ -7,6 +7,7 @@ public class Main {
         ThreadClass thread1 = new ThreadClass();
         ThreadClass thread2 = new ThreadClass();
         new Thread(thread1, "Thread1").start();
+
         new Thread(thread2, "Thread2").start();
     }
 }
