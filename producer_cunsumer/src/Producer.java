@@ -9,7 +9,7 @@ public class Producer implements Runnable {
 
     public static final String PATH = "E:\\ProgrammFiles\\hillel\\Homework\\producer_cunsumer\\src\\source\\";
 
-    protected BlockingQueue<String> bQ = null;
+    private BlockingQueue<String> bQ = null;
 
     public Producer(BlockingQueue<String> bQ) {
         this.bQ = bQ;

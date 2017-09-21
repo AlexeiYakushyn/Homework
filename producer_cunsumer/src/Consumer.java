@@ -10,7 +10,7 @@ import java.util.concurrent.BlockingQueue;
  */
 public class Consumer implements Runnable {
 
-    protected BlockingQueue<String> blockingQueue = null;
+    private BlockingQueue<String> blockingQueue = null;
 
     public Consumer(BlockingQueue<String> blockingQueue) {
         this.blockingQueue = blockingQueue;
