@@ -24,7 +24,7 @@ public class MyExecutorService extends Thread {
     }
 
     public void executor() {
-        ExecutorService executor = Executors.newFixedThreadPool(3);
+        ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.execute(new Runnable() {
             public void run() {
                 String line = null;
@@ -42,9 +42,7 @@ public class MyExecutorService extends Thread {
                         System.out.println(count);
                         if (sharedQueue.size() == 0) break;
 
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    } catch (FileNotFoundException e) {
+                    } catch (InterruptedException | FileNotFoundException e) {
                         e.printStackTrace();
                     } catch (IOException e) {
                         e.printStackTrace();
