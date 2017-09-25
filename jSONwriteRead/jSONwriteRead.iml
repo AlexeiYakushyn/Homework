@@ -10,7 +10,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../jar_files/json-20170516.jar!/" />
+          <root url="jar://$USER_HOME$/jar_files/json-20170516.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,13 +19,14 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../json-simple-1.1.1.jar!/" />
+          <root url="jar://$USER_HOME$/json-simple-1.1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="json-simple-1.1.1" level="project" />
+    <orderEntry type="library" name="json-simple-1.1.1" level="application" />
     <orderEntry type="library" name="java-json" level="project" />
+    <orderEntry type="library" name="junit-4.10" level="project" />
   </component>
 </module>
