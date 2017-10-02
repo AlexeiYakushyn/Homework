@@ -16,9 +16,9 @@ public class ThreadClass implements Runnable {
             int x  = method.getCount();
             x++;
             method.setCount(x);
-            System.out.println("Count equals: " + Thread.currentThread().getName() + " " + method.getCount());
+            System.out.println("Count equals: " + Thread.currentThread().getName() + "   " + method.getCount());
             try {
-                Thread.sleep(1);
+                Thread.sleep(10);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
