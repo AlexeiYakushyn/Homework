@@ -25,8 +25,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="json-simple-1.1.1" level="application" />
-    <orderEntry type="library" name="java-json" level="project" />
-    <orderEntry type="library" name="junit-4.10" level="project" />
+    <orderEntry type="library" exported="" name="json-simple-1.1.1" level="application" />
+    <orderEntry type="library" exported="" name="junit-4.10" level="project" />
+    <orderEntry type="library" name="junit-4.101" level="project" />
   </component>
 </module>
