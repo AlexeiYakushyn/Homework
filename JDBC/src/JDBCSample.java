@@ -11,7 +11,7 @@ public class JDBCSample {
     static final String DB_URL = "jdbc:mysql://localhost/";
     //  Database credentials
     static final String USER = "root";
-    static final String PASS = "adminiptv";
+    static final String PASS = "adminiptv2017";
 
     public static void main(String[] args) {
         Connection connection = null;
@@ -42,16 +42,18 @@ public class JDBCSample {
 //            statement.executeUpdate("INSERT INTO progress VALUES (4,5,4,3)");
 //            statement.executeUpdate("INSERT INTO progress VALUES (5,4,4,5)");
 
-            try (ResultSet resultSet = statement.executeQuery("SELECT * FROM students.students WHERE id in (SELECT student_id FROM students.progress WHERE math = 3);")) {
+
+            try (ResultSet resultSet = statement.executeQuery("SELECT * FROM students.students WHERE id in (SELECT student_id FROM students.progress WHERE math = 3);");) {
                 while (resultSet.next()) {
                     String firstName = resultSet.getString("firstname");
                     System.out.println(firstName + " has 3 in math");
-                    try (ResultSet resultSet1 = statement.executeQuery("SELECT * FROM students.students WHERE id in (SELECT student_id FROM students.progress WHERE physics > programming);")) {
-                        while (resultSet1.next()) {
-                            String firstName1 = resultSet1.getString("firstname");
-                            System.out.println(firstName1 + " has physics > programming");
-                        }
-                    }
+                }
+            }
+
+            try (ResultSet resultSet1 = statement.executeQuery("SELECT * FROM students.students WHERE id in (SELECT student_id FROM students.progress WHERE physics > programming);");) {
+                while (resultSet1.next()) {
+                    String firstName1 = resultSet1.getString("firstname");
+                    System.out.println(firstName1 + " has physics > programming");
                 }
             }
         } catch (ClassNotFoundException e) {
